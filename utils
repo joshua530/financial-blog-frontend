@@ -1,2 +1,3 @@
 #!/bin/bash
-gnome-terminal -- npm run start
+gnome-terminal -- npm run start &&
+gnome-terminal -- sh -c 'cd ~/Tmp/mern_stack && npm run dev'
