@@ -1,0 +1,44 @@
+@import 'config';
+
+/* general styles */
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: $brown;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $dark-brown;
+  }
+}
+
+.post {
+  border-radius: 0;
+  box-shadow: 1px 2px 3px #000;
+  margin: 20px 0 !important;
+}
+
+.btn-brown {
+  background: $brown;
+  color: #fff;
+  box-shadow: none !important;
+  border-radius: 0;
+
+  &:hover {
+    background: $dark-brown;
+    color: #fff;
+  }
+}
+
+nav {
+  .nav-item,
+  .navbar-brand {
+    @media screen and (max-width: 275px) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@import 'forms';
+@import 'comment';

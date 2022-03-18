@@ -1,0 +1,61 @@
+/* forms */
+form {
+  .btn-submit {
+    border-radius: 0;
+    width: 100%;
+    box-shadow: none !important;
+    cursor: pointer;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: $brown;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $dark-brown !important;
+    }
+  }
+
+  textarea {
+    border-radius: 0 !important;
+    border: 1px solid #000 !important;
+
+    &:focus {
+      border-color: $brown !important;
+      box-shadow: 0 0 5px $brown !important;
+    }
+  }
+}
+
+.form-section {
+  margin: 0;
+  margin-bottom: 30px;
+
+  label {
+    font-size: 17px;
+  }
+
+  $input-types: ('text', 'email', 'password');
+  @each $type in $input-types {
+    input[type='#{$type}'] {
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid;
+      outline: none;
+      padding: 0;
+      height: 33px;
+      font-size: 15px;
+
+      &:focus,
+      &:active,
+      &:focus {
+        border-bottom: 1px solid $brown;
+        box-shadow: 0 2px $brown;
+      }
+    }
+  }
+}
+
+.ck-content {
+  max-height: 25em !important;
+}
