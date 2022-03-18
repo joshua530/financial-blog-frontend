@@ -1,0 +1,9 @@
+export const AUTHENTICATE = 'AUTHENTICATE';
+export const DEAUTHENTICATE = 'DEAUTHENTICATE';
+
+export const ADD_TO_INDEX = 'ADD_TO_INDEX';
+export const DELETE_FROM_INDEX = 'DELETE_FROM_INDEX';
+
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+export const SET_COMMENTS = 'SET_COMMENTS';
